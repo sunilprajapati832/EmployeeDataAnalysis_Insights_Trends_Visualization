@@ -1,4 +1,36 @@
-Tree/f D:.
+Employee Data Analysis — Fresh Project (Full scaffold)
+
+This canvas contains a complete, fresh project scaffold for your Employee Data Analysis repository. It includes all key files, ready-to-run Python scripts, SQL queries, a polished README, data dictionary, CI workflow, and notes for running locally.
+
+What’s included
+
+Project structure (folders + files)
+
+README.md (full) + DATA_DICTIONARY.md
+
+src/etl/clean_data.py (robust, path-safe, debug-friendly)
+
+src/etl/to_sql.py (loads unified CSV to SQLite)
+
+src/viz/charts.py (reusable plotting helpers)
+
+src/analysis/summary_insights.py (example analysis script)
+
+sql/ queries
+
+notebooks/ placeholders
+
+requirements.txt, .gitignore, GitHub Actions workflow
+
+# Employee Data Analysis
+
+
+Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations, and insights.
+
+
+
+
+(Project folder tree)Tree/f D:.
 │   .gitignore
 │   LICENSE
 │   main.py
@@ -61,3 +93,4 @@ Tree/f D:.
 │           charts.py
 │           
 └───visualizations
+
