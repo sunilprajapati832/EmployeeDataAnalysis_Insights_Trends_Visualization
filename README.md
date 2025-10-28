@@ -177,6 +177,8 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 └───visualizations
 
 
+## About Me
+I'm Sunil Prajapati — a data analyst, machine learning enthusiast and educational content creator. This project reflects my growth from beginner to practitioner and my passion for turning data into insights.
 
 
 
