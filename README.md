@@ -29,19 +29,20 @@ This project combines the following five repositories:
 ## Python Scripts Included
 From various projects, the following scripts are integrated and modularized:
 
-* DataAnalysisHypothesisTesting.py
+
 * DataVisualization.py
 * DataVisualization.py
-* DataVisualizationFinal.py
 * EmployeeDataAnalysis1.py
-* ExploratoryDataAnalysis1.py
+* DataVisualizationFinal.py
 * ExploratoryDataAnalysis2.py
+* ExploratoryDataAnalysis1.py
+* DataAnalysisHypothesisTesting.py
 * ProgrammingApproachesInDataAnalysis.py
-* StatisticalAnalysis.py
 * exploratoryDataAnalysisEDA.py
-* SQLPractices.py
-* mysql_upload.py
+* StatisticalAnalysis.py
 * mysql_upload1.py
+* mysql_upload.py
+* SQLPractices.py
 * script.py
 * main.py
 
@@ -174,6 +175,7 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 │           charts.py
 │           
 └───visualizations
+
 
 
 
