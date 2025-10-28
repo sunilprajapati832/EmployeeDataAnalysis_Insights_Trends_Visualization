@@ -123,6 +123,11 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 │           
 └───visualizations
 
+# How to Run the Project
+* Clone the repository: git clone https://github.com/yourusername/EmployeeDataAnalysis_Insights_Trends_Visualization.git
+* Install dependencies: pip install -r requirements.txt
+* Run notebooks or scripts from the /notebooks or /scripts folder.
 
 ## About Me
 I'm Sunil Prajapati — a data analyst, machine learning enthusiast and educational content creator. This project reflects my growth from beginner to practitioner and my passion for turning data into insights.
+
