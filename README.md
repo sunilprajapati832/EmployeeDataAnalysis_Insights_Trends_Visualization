@@ -13,7 +13,6 @@ This project reflects my belief in quality over quantity and serves as a milesto
 ## Origin: Merged Repositories
 This project combines the following five repositories:
 
-
 | **S.No..** | **Project Name**                    | **Description**                                                                                   |
 |------------| ----------------------------------- | ------------------------------------------------------------------------------------------------- |
 |1.          | `Employee Data Insights Project 1`  | Used employees.csv with multiple Python scripts for EDA, hypothesis testing and visualization     |
@@ -21,6 +20,15 @@ This project combines the following five repositories:
 |3.          | `Sales Data Insights Project 1`     | Blank project created to learn GitHub repository setup                                            |
 |4.          | `Employee Data Analysis 2`          | Used employees_project_cleaned.csv with main.py                                                   |
 |5.          | `Employee Data Analysis 3`          | Same as Project`Employee Data Analysis 2` — same dataset and script                               |
+
+## Datasets Used
+* employees.csv — raw data used for hypothesis testing and EDA
+* employees_cleaned_data.csv — used for SQL queries and visualizations
+* employees_project_cleaned.csv — used in Projects 2 & 3 for performance and salary analysis
+
+
+
+
 
 
 
@@ -122,5 +130,6 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 │           charts.py
 │           
 └───visualizations
+
 
 
