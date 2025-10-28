@@ -28,8 +28,6 @@ This project combines the following five repositories:
 
 ## Python Scripts Included
 From various projects, the following scripts are integrated and modularized:
-
-
 * DataVisualization.py
 * DataVisualization.py
 * EmployeeDataAnalysis1.py
@@ -46,71 +44,20 @@ From various projects, the following scripts are integrated and modularized:
 * script.py
 * main.py
 
+## Key Analytical Techniques
+* SQL Queries: Department-wise salary insights, ranking salaries, filtering by performance
+* Python EDA: Histograms, boxplots, scatterplots, treemaps, heatmaps
+* Statistical Testing: ANOVA, T-tests, Chi-square, Mann-Whitney U Test, Correlation analysis
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This canvas contains a complete, fresh project scaffold for your Employee Data Analysis repository. It includes all key files, ready-to-run Python scripts, SQL queries, a polished README, data dictionary, CI workflow, and notes for running locally.
-
-What’s included
-
-Project structure (folders + files)
-
-README.md (full) + DATA_DICTIONARY.md
-
-src/etl/clean_data.py (robust, path-safe, debug-friendly)
-
-src/etl/to_sql.py (loads unified CSV to SQLite)
-
-src/viz/charts.py (reusable plotting helpers)
-
-src/analysis/summary_insights.py (example analysis script)
-
-sql/ queries
-
-notebooks/ placeholders
-
-requirements.txt, .gitignore, GitHub Actions workflow
+## Sample Visualizations
+* Salary distribution by department
+* Bonus % vs Performance Score
+* Gender distribution across teams
+* Treemaps of salary and employee count
+* Correlation heatmaps
 
 # Employee Data Analysis
-
-
-Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations, and insights.
-
-
-
+Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
 
 (Project folder tree)Tree/f D:.
 │   .gitignore
@@ -179,6 +126,3 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 
 ## About Me
 I'm Sunil Prajapati — a data analyst, machine learning enthusiast and educational content creator. This project reflects my growth from beginner to practitioner and my passion for turning data into insights.
-
-
-
