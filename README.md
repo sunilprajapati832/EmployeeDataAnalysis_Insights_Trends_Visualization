@@ -26,6 +26,50 @@ This project combines the following five repositories:
 * employees_cleaned_data.csv — used for SQL queries and visualizations
 * employees_project_cleaned.csv — used in Projects 2 & 3 for performance and salary analysis
 
+## Python Scripts Included
+From various projects, the following scripts are integrated and modularized:
+
+* DataAnalysisHypothesisTesting.py
+* DataVisualization.py
+* DataVisualization.py
+* DataVisualizationFinal.py
+* EmployeeDataAnalysis1.py
+* ExploratoryDataAnalysis1.py
+* ExploratoryDataAnalysis2.py
+* ProgrammingApproachesInDataAnalysis.py
+* StatisticalAnalysis.py
+* exploratoryDataAnalysisEDA.py
+* SQLPractices.py
+* mysql_upload.py
+* mysql_upload1.py
+* script.py
+* main.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,6 +174,7 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 │           charts.py
 │           
 └───visualizations
+
 
 
 
