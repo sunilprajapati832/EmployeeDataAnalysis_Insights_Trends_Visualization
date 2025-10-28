@@ -135,5 +135,5 @@ If you found this project interesting, let’s connect!
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20Me-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/sunil-prajapati832)
 
 ---
-🛠 Built by: Sunil Prajapati | Python + Data + Github + Canva + PyCharm
+🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
