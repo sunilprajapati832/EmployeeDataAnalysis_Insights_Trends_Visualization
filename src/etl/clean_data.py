@@ -1,6 +1,7 @@
 from pathlib import Path
 import pandas as pd
 import sys
+import numpy as np
 
 # --- Paths (project-root aware) ---
 BASE_DIR = Path(__file__).resolve().parents[2]
@@ -117,6 +118,13 @@ def main():
     # --- Combine and deduplicate ---
     unified = pd.concat([df1, df2, df3], ignore_index=True, sort=False)
     unified = unified.drop_duplicates(subset=["employee_id"], keep="first")
+
+    # Fill missing performance_score with random realistic values (e.g. 60–100)
+    if 'performance_score' in unified.columns:
+        mask = unified['performance_score'].isna()
+        unified.loc[mask, 'performance_score'] = np.random.randint(60, 101, size=mask.sum())
+    else:
+        unified['performance_score'] = np.random.randint(60, 101, size=len(unified))
 
     # --- Save unified dataset ---
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)

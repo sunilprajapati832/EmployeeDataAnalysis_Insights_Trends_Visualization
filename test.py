@@ -1,7 +1,9 @@
+import pandas as pd
 from pathlib import Path
 
-RAW_DIR = Path(r"D:\EmployeeDataAnalysis_Insights_Trends_Visualization\data\raw")
+path = Path(r"D:\EmployeeDataAnalysis_Insights_Trends_Visualization\data\processed\employees_unified.csv")
+df = pd.read_csv(path)
 
-print("Checking files in:", RAW_DIR)
-for f in RAW_DIR.glob("*"):
-    print(f.name)
+print(df.columns)
+print(df['performance_score'].head(20))
+print(df['performance_score'].describe())
