@@ -24,6 +24,13 @@ This project combines the following five repositories:
 |5.          | `Employee Data Analysis 3`          | Same as Project`Employee Data Analysis 2` — same dataset and script                               |
 
 ### Datasets Used
+
+| **EmployeeDataInsightsProject1**    |**DataVisualizationEmployeeAnalysis**| **EmployeeDataAnalysis2**     |
+|-------------------------------------| ----------------------------------- | ----------------------------- |
+|employees.csv (raw data used for hypothesis testing and EDA)  | employees_project_cleaned.csv (used for SQL queries and visualizations) | employees_project_cleaned.csv (used in Projects 2 & 3 for performance and salary analysis) |
+
+
+
 * employees.csv — raw data used for hypothesis testing and EDA
 * employees_cleaned_data.csv — used for SQL queries and visualizations
 * employees_project_cleaned.csv — used in Projects 2 & 3 for performance and salary analysis
@@ -40,21 +47,6 @@ From various projects, the following scripts are integrated and modularized:
 |ProgrammingApproachesInDataAnalysis.py|                                    |                          |
 |exploratoryDataAnalysisEDA.py        |                                     |                          |
 |StatisticalAnalysis.py               |                                     |                          |
-
-
-* DataVisualization.py
-* EmployeeDataAnalysis1.py
-* DataVisualizationFinal.py
-* ExploratoryDataAnalysis2.py
-* DataAnalysisHypothesisTesting.py
-* ProgrammingApproachesInDataAnalysis.py
-* exploratoryDataAnalysisEDA.py
-* StatisticalAnalysis.py
-* mysql_upload1.py
-* mysql_upload.py
-* SQLPractices.py
-* script.py
-* main.py
 
 ### Key Analytical Techniques
 * SQL Queries: Department-wise salary insights, ranking salaries, filtering by performance
@@ -238,6 +230,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
