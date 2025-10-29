@@ -29,7 +29,7 @@ This project combines the following five repositories:
 |-------------------------------------| ----------------------------------- | ----------------------------- |
 |employees.csv <br> (raw data used for hypothesis testing and EDA)  | employees_project_cleaned.csv <br> (used for SQL queries and visualizations) | employees_project_cleaned.csv <br> (used in Projects 2 & 3 for performance and salary analysis) |
 
-### Python Scripts Included 
+### Python Scripts Used 
 From various projects, the following scripts are integrated and modularized:
 | **EmployeeDataInsightsProject1**    |**DataVisualizationEmployeeAnalysis**| **EmployeeDataAnalysis2**|
 |-------------------------------------| ----------------------------------- | ------------------------ |
@@ -46,13 +46,7 @@ From various projects, the following scripts are integrated and modularized:
 * SQL Queries: Department-wise salary insights, ranking salaries, filtering by performance
 * Python EDA: Histograms, boxplots, scatterplots, treemaps, heatmaps
 * Statistical Testing: ANOVA, T-tests, Chi-square, Mann-Whitney U Test, Correlation analysis
-
-### Sample Visualizations
-* Salary distribution by department
-* Bonus % vs Performance Score
-* Gender distribution across teams
-* Treemaps of salary and employee count
-* Correlation heatmaps
+* Sample Visualizations: Salary distribution by department, Bonus % vs Performance Score, Gender distribution across teams, Treemaps of salary and employee count, Correlation heatmaps
 
 # Employee Data Analysis (Insights, Trends & Visualizations) 
 Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
@@ -224,6 +218,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
