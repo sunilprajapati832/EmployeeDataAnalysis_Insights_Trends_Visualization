@@ -26,7 +26,7 @@ This project combines the following five repositories:
 * employees_cleaned_data.csv — used for SQL queries and visualizations
 * employees_project_cleaned.csv — used in Projects 2 & 3 for performance and salary analysis
 
-## Python Scripts Included
+## Python Scripts Included 
 From various projects, the following scripts are integrated and modularized:
 * DataVisualization.py
 * DataVisualization.py
