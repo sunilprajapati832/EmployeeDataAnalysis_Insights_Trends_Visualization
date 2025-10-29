@@ -51,38 +51,14 @@ From various projects, the following scripts are integrated and modularized:
 # Employee Data Analysis (Insights, Trends & Visualizations) 
 Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
 
+| **UpdatedDataset**   |**New Python Scripts**| **Database**   | **SQL_Files**       |
+|--------------------- | -------------------- | -------------- |---------------------|
+|employees_unified.csv |                      |employee_data.db|create_schema.sql    |
+
+
+
+
 ## Project folder tree (Tree/f) 
-D:.
-├───.idea
-│   └───inspectionProfiles
-├───assets
-├───data
-│   ├───processed
-│   └───raw
-├───notebooks
-├───outputs
-│   ├───plots
-│   └───reports
-├───reports
-├───scripts
-├───sql
-│   └───queries
-├───src
-│   ├───analysis
-│   ├───etl
-│   │   └───data
-│   │       └───processed
-│   ├───outputs
-│   │   ├───plots
-│   │   └───reports
-│   └───viz
-└───visualizations
-    └───outputs
-        ├───plots
-        └───reports
-(venv) PS D:\EmployeeDataAnalysis_Insights_Trends_Visualization> tree /f
-Folder PATH listing for volume New Volume
-Volume serial number is CEB3-FEDD
 D:.
 │   .gitignore
 │   LICENSE
@@ -218,6 +194,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
