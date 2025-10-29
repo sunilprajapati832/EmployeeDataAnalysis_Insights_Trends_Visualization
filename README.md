@@ -10,7 +10,9 @@ The goal of this project is to merge multiple employee-related datasets and anal
 * Business insights across departments, gender, salary and performance
 This project reflects my belief in quality over quantity and serves as a milestone in my data analytics journey.
 
-## Origin: Merged Repositories
+## Data used from Merged Repositories
+
+### Origin: Merged Repositories
 This project combines the following five repositories:
 
 | **S.No..** | **Project Name**                    | **Description**                                                                                   |
@@ -21,12 +23,12 @@ This project combines the following five repositories:
 |4.          | `Employee Data Analysis 2`          | Used employees_project_cleaned.csv with main.py                                                   |
 |5.          | `Employee Data Analysis 3`          | Same as Project`Employee Data Analysis 2` — same dataset and script                               |
 
-## Datasets Used
+### Datasets Used
 * employees.csv — raw data used for hypothesis testing and EDA
 * employees_cleaned_data.csv — used for SQL queries and visualizations
 * employees_project_cleaned.csv — used in Projects 2 & 3 for performance and salary analysis
 
-## Python Scripts Included 
+### Python Scripts Included 
 From various projects, the following scripts are integrated and modularized:
 * DataVisualization.py
 * DataVisualization.py
@@ -44,19 +46,19 @@ From various projects, the following scripts are integrated and modularized:
 * script.py
 * main.py
 
-## Key Analytical Techniques
+### Key Analytical Techniques
 * SQL Queries: Department-wise salary insights, ranking salaries, filtering by performance
 * Python EDA: Histograms, boxplots, scatterplots, treemaps, heatmaps
 * Statistical Testing: ANOVA, T-tests, Chi-square, Mann-Whitney U Test, Correlation analysis
 
-## Sample Visualizations
+### Sample Visualizations
 * Salary distribution by department
 * Bonus % vs Performance Score
 * Gender distribution across teams
 * Treemaps of salary and employee count
 * Correlation heatmaps
 
-# Employee Data Analysis
+### Employee Data Analysis
 Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
 
 (Project folder tree)Tree/f D:.
@@ -225,4 +227,5 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
