@@ -29,12 +29,6 @@ This project combines the following five repositories:
 |-------------------------------------| ----------------------------------- | ----------------------------- |
 |employees.csv <br> (raw data used for hypothesis testing and EDA)  | employees_project_cleaned.csv <br> (used for SQL queries and visualizations) | employees_project_cleaned.csv <br> (used in Projects 2 & 3 for performance and salary analysis) |
 
-
-
-* employees.csv — raw data used for hypothesis testing and EDA
-* employees_cleaned_data.csv — used for SQL queries and visualizations
-* employees_project_cleaned.csv — used in Projects 2 & 3 for performance and salary analysis
-
 ### Python Scripts Included 
 From various projects, the following scripts are integrated and modularized:
 | **EmployeeDataInsightsProject1**    |**DataVisualizationEmployeeAnalysis**| **EmployeeDataAnalysis2**|
@@ -230,6 +224,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
