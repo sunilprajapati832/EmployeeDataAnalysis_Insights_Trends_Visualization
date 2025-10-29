@@ -42,7 +42,7 @@ From various projects, the following scripts are integrated and modularized:
 |exploratoryDataAnalysisEDA.py        |                                     |                          |
 |StatisticalAnalysis.py               |                                     |                          |
 
-### Key Analytical Techniques
+### Key Analytical Techniques Used
 * SQL Queries: Department-wise salary insights, ranking salaries, filtering by performance
 * Python EDA: Histograms, boxplots, scatterplots, treemaps, heatmaps
 * Statistical Testing: ANOVA, T-tests, Chi-square, Mann-Whitney U Test, Correlation analysis
@@ -218,6 +218,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
