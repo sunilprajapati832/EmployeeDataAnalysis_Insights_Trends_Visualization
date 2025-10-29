@@ -1,0 +1,26 @@
+Exploratory Data Analysis (EDA) Summary
+============================================================
+Rows: 4000, Columns: 11
+Numeric columns: ['age', 'job_level', 'years_experience', 'salary', 'bonus_percent', 'performance_score']
+Categorical columns: ['employee_id', 'first_name', 'gender', 'department', 'source_file']
+
+Numeric summaries (mean, median, std, min, max, non-null):
+age: mean=40.81, median=41.00, std=11.08, min=22.00, max=59.00, count=3999
+job_level: no valid numeric values
+years_experience: no valid numeric values
+salary: mean=88360.85, median=87713.00, std=34462.23, min=30138.00, max=149863.00, count=4000
+bonus_percent: mean=12.48, median=12.51, std=4.32, min=5.00, max=19.99, count=4000
+performance_score: mean=79.93, median=80.00, std=11.81, min=60.00, max=100.00, count=4000
+
+Categorical summaries (top 3 values):
+employee_id: GEN_4983(1); GEN_4982(1); GEN_4981(1)
+first_name: Albert(1)
+gender: female(1382); other(1309); male(1309)
+department: Finance(745); HR(692); Operations(684)
+source_file: employees_cleaned_data.csv(2000); employees_project_cleaned.csv(1999); employees.csv(1)
+
+Missing values (per column):
+first_name: 3999
+age: 1
+job_level: 4000
+years_experience: 4000

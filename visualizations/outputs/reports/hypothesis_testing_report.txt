@@ -1,0 +1,2 @@
+Hypothesis Test: Male vs Female Salary
+T=-0.38, P=0.7007, Conclusion: Fail to Reject H0 (No Significant Difference)

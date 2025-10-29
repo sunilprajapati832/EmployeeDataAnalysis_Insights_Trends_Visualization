@@ -1,0 +1,21 @@
+Total teams: 6
+Teams: Finance, Engineering, Sales, Marketing, Operations, HR
+
+Average salary by department (top 10):
+department
+HR             89784.104046
+Sales          88750.411570
+Operations     88698.073099
+Engineering    87941.910217
+Finance        87533.597315
+Marketing      87462.264331
+
+Gender counts by department (sample):
+gender       female  male  other
+department                      
+Engineering     222   200    224
+Finance         230   240    275
+HR              250   250    192
+Marketing       230   188    210
+Operations      242   232    210
+Sales           208   199    198

@@ -1,0 +1,26 @@
+🧠 EMPLOYEE HYPOTHESIS TESTING REPORT
+============================================================
+
+[ANOVA Test]
+F-statistic = 0.455, p-value = 0.8102
+❌ No significant salary difference across departments.
+
+
+[T-Test: Salary by Gender]
+T-statistic = -0.385, p-value = 0.7004
+❌ No significant salary difference between genders.
+
+
+[Chi-Square Test: Department vs Gender]
+Chi2 = 20.201, p-value = 0.0274
+✅ There is a relationship between department and gender.
+
+
+[Correlation: Salary vs Bonus]
+Pearson r = 0.001, p-value = 0.9430
+❌ No significant correlation between salary and bonus.
+
+
+[Mann-Whitney U Test]
+U-statistic = 896162.000, p-value = 0.6783
+❌ No significant difference detected in non-parametric test.

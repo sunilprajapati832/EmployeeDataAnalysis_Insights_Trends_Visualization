@@ -1,0 +1,2 @@
+T-test: male vs female salary -> t=-0.3844, p=0.7007, conclusion=Fail to Reject H0
+Chi-square: department vs gender -> chi2=20.2008, p=0.0274, conclusion=Reject H0
