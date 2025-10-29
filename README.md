@@ -30,12 +30,22 @@ This project combines the following five repositories:
 
 ### Python Scripts Included 
 From various projects, the following scripts are integrated and modularized:
-* DataVisualization.py
+| **EmployeeDataInsightsProject1**    |**DataVisualizationEmployeeAnalysis**| **EmployeeDataAnalysis2**|
+|-------------------------------------| ----------------------------------- | ------------------------ |
+|DataVisualization.py                 | mysql_upload1.py                    | main.py                  |
+|EmployeeDataAnalysis1.py             | mysql_upload.py                     |                          |
+|DataVisualizationFinal.py            | script.py                           |                          |
+|ExploratoryDataAnalysis2.py          |                                     |                          |
+|DataAnalysisHypothesisTesting.py     |                                     |                          |
+|ProgrammingApproachesInDataAnalysis.py|                                    |                          |
+|exploratoryDataAnalysisEDA.py        |                                     |                          |
+|StatisticalAnalysis.py               |                                     |                          |
+
+
 * DataVisualization.py
 * EmployeeDataAnalysis1.py
 * DataVisualizationFinal.py
 * ExploratoryDataAnalysis2.py
-* ExploratoryDataAnalysis1.py
 * DataAnalysisHypothesisTesting.py
 * ProgrammingApproachesInDataAnalysis.py
 * exploratoryDataAnalysisEDA.py
@@ -228,6 +238,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
