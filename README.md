@@ -60,6 +60,37 @@ From various projects, the following scripts are integrated and modularized:
 Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
 
 (Project folder tree)Tree/f D:.
+├───.idea
+│   └───inspectionProfiles
+├───assets
+├───data
+│   ├───processed
+│   └───raw
+├───notebooks
+├───outputs
+│   ├───plots
+│   └───reports
+├───reports
+├───scripts
+├───sql
+│   └───queries
+├───src
+│   ├───analysis
+│   ├───etl
+│   │   └───data
+│   │       └───processed
+│   ├───outputs
+│   │   ├───plots
+│   │   └───reports
+│   └───viz
+└───visualizations
+    └───outputs
+        ├───plots
+        └───reports
+(venv) PS D:\EmployeeDataAnalysis_Insights_Trends_Visualization> tree /f
+Folder PATH listing for volume New Volume
+Volume serial number is CEB3-FEDD
+D:.
 │   .gitignore
 │   LICENSE
 │   main.py
@@ -96,6 +127,29 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 │       02_sql_analysis.ipynb
 │       03_visualizations.ipynb
 │       
+├───outputs
+│   ├───plots
+│   │       avg_salary_by_department.png
+│   │       correlation_heatmap.png
+│   │       distribution_comparison.png
+│   │       gender_distribution.png
+│   │       gender_distribution_by_department.png
+│   │       pairplot_relationships.png
+│   │       salary_boxplot.png
+│   │       salary_distribution.png
+│   │       salary_violin_by_department.png
+│   │       salary_violin_department.png
+│   │       salary_vs_bonus.png
+│   │       salary_vs_performance.png
+│   │       team_avg_salary_by_department.png
+│   │       team_gender_distribution_by_department.png
+│   │       
+│   └───reports
+│           eda_summary.txt
+│           hypothesis_testing_report.txt
+│           statistical_summary.csv
+│           team_analysis_report.txt
+│           
 ├───reports
 │       insights_summary.md
 │       
@@ -110,18 +164,52 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 │           
 ├───src
 │   ├───analysis
+│   │       run_sql_queries.py
 │   │       summary_insights.py
 │   │       
 │   ├───etl
 │   │   │   clean_data.py
+│   │   │   data_cleaning_methods_demo.py
 │   │   │   to_sql.py
 │   │   │   
 │   │   └───data
 │   │       └───processed
+│   ├───outputs
+│   │   ├───plots
+│   │   │       anova_salary_by_department.png
+│   │   │       chi_square_department_gender.png
+│   │   │       correlation_salary_bonus.png
+│   │   │       mannwhitney_salary_by_gender.png
+│   │   │       ttest_salary_by_gender.png
+│   │   │       
+│   │   └───reports
+│   │           hypothesis_testing_report.txt
+│   │           
 │   └───viz
 │           charts.py
 │           
 └───visualizations
+    │   basic_visualizations.py
+    │   basic_visualizations_1.py
+    │   basic_visualizations_2.py
+    │   
+    └───outputs
+        ├───plots
+        │       avg_salary_by_department.png
+        │       correlation_heatmap.png
+        │       gender_distribution.png
+        │       gender_distribution_by_department.png
+        │       salary_boxplot.png
+        │       salary_distribution.png
+        │       salary_violin_by_department.png
+        │       salary_vs_bonus.png
+        │       
+        └───reports
+                eda_summary.txt
+                hypothesis_testing.txt
+                hypothesis_testing_report.txt
+                statistical_summary.csv
+                team_analysis.csv
 
 ## How to Run the Project
 * Clone the repository: git clone https://github.com/sunilprajapati832/EmployeeDataAnalysis_Insights_Trends_Visualization.git
@@ -137,3 +225,4 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
