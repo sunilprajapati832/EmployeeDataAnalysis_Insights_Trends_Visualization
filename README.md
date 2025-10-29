@@ -58,10 +58,11 @@ From various projects, the following scripts are integrated and modularized:
 * Treemaps of salary and employee count
 * Correlation heatmaps
 
-### Employee Data Analysis
+# Employee Data Analysis (Insights, Trends & Visualizations) 
 Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
 
-(Project folder tree)Tree/f D:.
+## Project folder tree (Tree/f) 
+D:.
 ├───.idea
 │   └───inspectionProfiles
 ├───assets
@@ -227,5 +228,6 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
