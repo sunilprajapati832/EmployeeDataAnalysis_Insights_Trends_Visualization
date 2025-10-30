@@ -55,7 +55,8 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 📁 **Core Python File:** `basic_visualizations.py`  
 📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm)
-🧰 **Tools & Technologies:** (Language) Python 3.11+ , (Libraries) pandas, numpy, scipy, matplotlib, tabulate ,  (Environment) PyCharm IDE , (Visualization) Matplotlib plots (saved + live)
+📁 **Tools & Technologies:** (Language) Python 3.11+ , (Libraries) pandas, numpy, scipy, matplotlib, tabulate ,  (Environment) PyCharm IDE , (Visualization) Matplotlib plots (saved + live) 
+
 
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       | **Reports**             |
 |--------------------- | -------------------- | -----------------------------------|---------------------|---------------------|-------------------------|
@@ -317,6 +318,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
