@@ -54,7 +54,7 @@ Unified Employee Data Analysis — This project focuses on **analyzing and uncov
 It combines **EDA**, **statistical hypothesis testing** and **data visualization** to reveal patterns in employee compensation, gender distribution and departmental structures.
 
 📁 **Core Python File:** `basic_visualizations.py`  
-📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm)
+📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm) <br>
 📁 **Tools & Technologies:** (Language) Python 3.11+ , (Libraries) pandas, numpy, scipy, matplotlib, tabulate ,  (Environment) PyCharm IDE , (Visualization) Matplotlib plots (saved + live) 
 
 
@@ -318,6 +318,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
