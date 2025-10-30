@@ -47,6 +47,7 @@ From various projects, the following scripts are integrated and modularized:
 * Python EDA: Histograms, boxplots, scatterplots, treemaps, heatmaps
 * Statistical Testing: ANOVA, T-tests, Chi-square, Mann-Whitney U Test, Correlation analysis
 * Sample Visualizations: Salary distribution by department, Bonus % vs Performance Score, Gender distribution across teams, Treemaps of salary and employee count, Correlation heatmaps
+---
 
 # Employee Data Analysis (Insights, Trends & Visualizations) 
 Unified Employee Data Analysis — This project focuses on **analyzing and uncovering insights from a synthetic employee dataset** containing demographics, compensation and performance metrics.  
@@ -84,9 +85,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 3. **Hypothesis Testing** – Validated assumptions using multiple statistical tests (ANOVA, T-Test, Chi-Square, Mann-Whitney U, Correlation).  
 4. **Visualization & Reporting** – Saved professional plots and generated summary tables for insights.  
 
----
-
-## 📊 Exploratory Data Analysis (EDA) Summary
+## Exploratory Data Analysis (EDA) Summary
 
 | Metric | Details |
 |:--|:--|
@@ -118,8 +117,6 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | job_level | 4000 |
 | years_experience | 4000 |
 
----
-
 ## Team & Department Analysis
 
 | Metric | Insight |
@@ -147,8 +144,6 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | Operations | 242 | 232 | 210 |
 | Sales | 208 | 199 | 198 |
 
----
-
 ## Hypothesis Testing Report
 
 | Test | Statistic | P-Value | Result | Insight |
@@ -158,8 +153,6 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | **Chi-Square (Dept vs Gender)** | χ² = 20.201 | 0.0274 | ✅ Significant | Department & gender are related |
 | **Correlation (Salary vs Bonus)** | r = 0.001 | 0.9430 | ❌ Not Significant | No linear relationship |
 | **Mann-Whitney U (Non-parametric)** | U = 896 162 | 0.6783 | ❌ Not Significant | No rank-based difference detected |
-
----
 
 ## Statistical Summary (Distribution Insights)
 
@@ -172,8 +165,6 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 🧩 *All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
 
----
-
 ## 💡 Key Insights
 
 - **Salary equality** observed across genders and departments.  
@@ -182,17 +173,12 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 - Data distribution shows balanced spread but incomplete job level & experience data.  
 - Clean, modular codebase ready for **further ML or dashboard integration**.  
 
----
-
 ## 🧰 Tools & Technologies
 
 - **Language:** Python 3.11+  
 - **Libraries:** pandas, numpy, scipy, matplotlib, tabulate  
 - **Environment:** PyCharm IDE  
 - **Visualization:** Matplotlib plots (saved + live)  
-
----
-
 
 ## Project folder tree (Tree/f) 
 D:.
@@ -330,6 +316,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
