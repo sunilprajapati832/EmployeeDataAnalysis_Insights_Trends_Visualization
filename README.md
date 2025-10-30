@@ -196,12 +196,6 @@ It provides insightful business trends, statistical reports, and data-driven rec
 * Action: Evaluate if the bonus system is effectively driving performance or needs restructuring.
 
 4. **Departmental Averages**
-|Department|	Avg. Salary (₹)|	Key Insight|
-|----------|-------------------|----------------------------|
-|HR	       |     89,784        |	Highest average salary, likely senior positions|
-|Sales	   |      88,750       |	Incentive-driven compensation|
-|Engineering / Operations	|  ~88,000	|Core technical stability|
-|Finance / Marketing|	~87,000|	May require motivation or rewards review|
 
 | Department | Avg. Salary (₹) | Key Insight|
 |:--|--:|--:|
@@ -354,6 +348,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
