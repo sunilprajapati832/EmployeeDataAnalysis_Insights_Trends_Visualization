@@ -53,17 +53,17 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       | **Reports**             |
 |--------------------- | -------------------- | -----------------------------------|---------------------|---------------------|-------------------------|
-|employees_unified.csv |                      |avg_salary_by_department.png        |employee_data.db     |create_schema.sql    |eda_summary.txt          |
-|                      |                      |correlation_heatmap.png             |                     |avg_salary_by_dept.sql|hypothesis_testing_report.txt|
-|                      |                      |distribution_comparison.png         |                     |gender_distribution.sql|statistical_summary.csv  |
-|                      |                      |gender_distribution.png             |                     |   top_performers.sql| team_analysis_report.txt|
-|                      |                      |gender_distribution_by_department.png|                    |                     | insights_summary.md     |
-|                      |                      |pairplot_relationships.png          |                     |                     |                         |  
-|                      |                      |salary_boxplot.png                  |                     |                     |                         |
-|                      |                      |salary_distribution.png             |                     |                     |                         |
-|                      |                      |salary_violin_by_department.png     |                     |                     |                         |
-|                      |                      |salary_violin_department.png        |                     |                     |                         |
-|                      |                      |salary_vs_bonus.png                 |                     |                     |                         |
+|employees_unified.csv |basic_visualizations.py|avg_salary_by_department.png       |employee_data.db     |create_schema.sql    |eda_summary.txt          |
+|                      |basic_visualizations_1.py |correlation_heatmap.png         |                     |avg_salary_by_dept.sql|hypothesis_testing_report.txt|
+|                      |basic_visualizations_2.py|distribution_comparison.png      |                     |gender_distribution.sql|statistical_summary.csv  |
+|                      |  run_sql_queries.py  |gender_distribution.png             |                     |   top_performers.sql| team_analysis_report.txt|
+|                      |   summary_insights.py|gender_distribution_by_department.png|                    |                     | insights_summary.md     |
+|                      |   clean_data.py      |pairplot_relationships.png          |                     |                     |                         |  
+|                      |data_cleaning_methods_demo.py |salary_boxplot.png          |                     |                     |                         |
+|                      |  to_sql.py           |salary_distribution.png             |                     |                     |                         |
+|                      |   main.py            |salary_violin_by_department.png     |                     |                     |                         |
+|                      |  test.py             |salary_violin_department.png        |                     |                     |                         |
+|                      |  charts.py           |salary_vs_bonus.png                 |                     |                     |                         |
 |                      |                      |salary_vs_performance.png           |                     |                     |                         |
 |                      |                      |team_avg_salary_by_department.png   |                     |                     |                         |
 |                      |                      |team_gender_distribution_by_department.png|               |                     |                         |
@@ -207,6 +207,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
