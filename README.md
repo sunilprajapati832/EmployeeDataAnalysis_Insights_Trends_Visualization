@@ -55,6 +55,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 📁 **Core Python File:** `basic_visualizations.py`  
 📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm)
+🧰 **Tools & Technologies:** (Language) Python 3.11+ , (Libraries) pandas, numpy, scipy, matplotlib, tabulate ,  (Environment) PyCharm IDE , (Visualization) Matplotlib plots (saved + live)
 
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       | **Reports**             |
 |--------------------- | -------------------- | -----------------------------------|---------------------|---------------------|-------------------------|
@@ -163,9 +164,9 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | bonus_percent | 12.48 | 12.51 | 4.32 | −0.01 | −1.20 |
 | performance_score | 79.93 | 80.00 | 11.81 | 0.02 | −1.20 |
 
-🧩 *All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
+*All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
 
-## 💡 Key Insights
+## Key Insights
 
 - **Salary equality** observed across genders and departments.  
 - **No strong correlation** between salary and bonus percentage.  
@@ -316,6 +317,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
