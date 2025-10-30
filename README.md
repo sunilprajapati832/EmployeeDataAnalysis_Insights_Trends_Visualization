@@ -95,7 +95,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | **Numeric Columns** | ['age', 'job_level', 'years_experience', 'salary', 'bonus_percent', 'performance_score'] |
 | **Categorical Columns** | ['employee_id', 'first_name', 'gender', 'department', 'source_file'] |
 
-### 🔢 Numeric Summaries
+### Numeric Summaries
 | Column | Mean | Median | Std | Min | Max | Count |
 |:--|--:|--:|--:|--:|--:|--:|
 | age | 40.81 | 41.00 | 11.08 | 22.00 | 59.00 | 3999 |
@@ -103,14 +103,14 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | bonus_percent | 12.48 | 12.51 | 4.32 | 5.00 | 19.99 | 4000 |
 | performance_score | 79.93 | 80.00 | 11.81 | 60.00 | 100.00 | 4000 |
 
-### 🧩 Categorical Insights
+### Categorical Insights
 | Column | Top 3 Values |
 |:--|:--|
 | gender | female (1382), other (1309), male (1309) |
 | department | Finance (745), HR (692), Operations (684) |
 | source_file | employees_cleaned_data.csv (2000), employees_project_cleaned.csv (1999), employees.csv (1) |
 
-### ⚠ Missing Values
+### Missing Values
 | Column | Missing Count |
 |:--|--:|
 | first_name | 3999 |
@@ -120,14 +120,14 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 ---
 
-## 📈 Team & Department Analysis
+## Team & Department Analysis
 
 | Metric | Insight |
 |:--|:--|
 | **Total Teams** | 6 |
 | **Departments** | Finance, Engineering, Sales, Marketing, Operations, HR |
 
-### 💰 Average Salary by Department
+### Average Salary by Department
 | Department | Avg Salary |
 |:--|--:|
 | HR | ₹ 89 784 |
@@ -137,7 +137,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | Finance | ₹ 87 533 |
 | Marketing | ₹ 87 462 |
 
-### ⚧ Gender Distribution by Department (Sample)
+### Gender Distribution by Department (Sample)
 | Department | Female | Male | Other |
 |:--|--:|--:|--:|
 | Engineering | 222 | 200 | 224 |
@@ -149,7 +149,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 ---
 
-## 🧪 Hypothesis Testing Report
+## Hypothesis Testing Report
 
 | Test | Statistic | P-Value | Result | Insight |
 |:--|--:|--:|:--|:--|
@@ -161,7 +161,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 ---
 
-## 📉 Statistical Summary (Distribution Insights)
+## Statistical Summary (Distribution Insights)
 
 | Column | Mean | Median | Std | Skew | Kurtosis |
 |:--|--:|--:|--:|--:|--:|
@@ -171,20 +171,6 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 | performance_score | 79.93 | 80.00 | 11.81 | 0.02 | −1.20 |
 
 🧩 *All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
-
----
-
-## 📁 Visualization Outputs
-
-All plots are **saved automatically** to  
-`/outputs/plots/`  
-and also **displayed live** during execution (ideal for PyCharm/Jupyter demos).
-
-Examples include:  
-- Salary distribution histogram  
-- Departmental salary boxplots  
-- Gender composition pie charts  
-- Correlation heatmaps  
 
 ---
 
@@ -207,14 +193,6 @@ Examples include:
 
 ---
 
-## 🌟 Ideal For
-
-✅ Portfolio demonstration (EDA + Statistical Thinking)  
-✅ GitHub recruiters assessing analytical clarity  
-✅ Data Analytics learning showcase  
-✅ Integration into Power BI or Dash visual dashboards  
-
----
 
 ## Project folder tree (Tree/f) 
 D:.
@@ -352,6 +330,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
