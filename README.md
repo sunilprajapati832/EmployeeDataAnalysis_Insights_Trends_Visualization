@@ -51,7 +51,8 @@ From various projects, the following scripts are integrated and modularized:
 
 # Employee Data Analysis (Insights, Trends & Visualizations) 
 Unified Employee Data Analysis — This project focuses on **analyzing and uncovering insights from a synthetic employee dataset** containing demographics, compensation and performance metrics.
-A complete end-to-end Employee Data Analytics & Insights Visualization Project built in Python, designed to demonstrate real-world data cleaning, EDA, statistical hypothesis testing, analysis and visualization skills. It provides insightful business trends, statistical reports, and data-driven recommendations for HR and management teams.
+A complete end-to-end Employee Data Analytics & Insights Visualization Project built in Python, designed to demonstrate real-world data cleaning, EDA, statistical hypothesis testing, analysis and visualization skills. 
+It provides insightful business trends, statistical reports, and data-driven recommendations for HR and management teams. <br>
 **Domain** — **Human Resource / Workforce Analytics**
 
 📁 **Core Python File:** `basic_visualizations.py`  
@@ -83,10 +84,15 @@ A complete end-to-end Employee Data Analytics & Insights Visualization Project b
 |                      |                      |team_gender_distribution_by_department.png|               |                     |                         |
 
 ## Project Workflow
-1. **Data Loading & Cleaning** – Combined multiple CSV sources and handled missing values.  
-2. **Exploratory Data Analysis (EDA)** – Statistical summary, type detection, and structure insights.  
-3. **Hypothesis Testing** – Validated assumptions using multiple statistical tests (ANOVA, T-Test, Chi-Square, Mann-Whitney U, Correlation).  
-4. **Visualization & Reporting** – Saved professional plots and generated summary tables for insights.  
+1. **Data Loading & Cleaning** – Load and preprocess unified HR data.  
+2. **Exploratory Data Analysis (EDA)** – Statistical summary, type detection, and structure insights.
+3. **Basic Visualizations** – salary, gender, and department trends
+4. **Visualization & Reporting** – Saved professional plots and generated summary tables for insights.
+5. **Statistical Analysis** – mean, std, skewness, kurtosis, etc.
+6. **Advanced Analysis** – ANOVA, correlation matrix, violin plots
+7. **Hypothesis Testing** – Validated assumptions using multiple statistical tests (T-Test, Chi-Square, Mann-Whitney U).  
+8. **Team-level Insights** – salary averages and gender distribution
+9. **Automated report saving** – in /outputs/reports and /outputs/plots
 
 ## Exploratory Data Analysis (EDA) Summary
 
@@ -312,6 +318,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
