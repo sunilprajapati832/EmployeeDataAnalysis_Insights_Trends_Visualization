@@ -50,8 +50,9 @@ From various projects, the following scripts are integrated and modularized:
 ---
 
 # Employee Data Analysis (Insights, Trends & Visualizations) 
-Unified Employee Data Analysis — This project focuses on **analyzing and uncovering insights from a synthetic employee dataset** containing demographics, compensation and performance metrics.  
-It combines **EDA**, **statistical hypothesis testing** and **data visualization** to reveal patterns in employee compensation, gender distribution and departmental structures.
+Unified Employee Data Analysis — This project focuses on **analyzing and uncovering insights from a synthetic employee dataset** containing demographics, compensation and performance metrics.
+A complete end-to-end Employee Data Analytics & Insights Visualization Project built in Python, designed to demonstrate real-world data cleaning, EDA, statistical hypothesis testing, analysis and visualization skills. It provides insightful business trends, statistical reports, and data-driven recommendations for HR and management teams.
+**Domain** — **Human Resource / Workforce Analytics**
 
 📁 **Core Python File:** `basic_visualizations.py`  
 📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm) <br>
@@ -311,6 +312,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
