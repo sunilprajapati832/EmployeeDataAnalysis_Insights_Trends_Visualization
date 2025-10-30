@@ -200,8 +200,8 @@ It provides insightful business trends, statistical reports, and data-driven rec
 |----------|-------------------|----------------------------|
 |HR	       |     89,784        |	Highest average salary, likely senior positions|
 |Sales	   |      88,750       |	Incentive-driven compensation|
-|Engineering / Operations	|  ~88,000	|Core technical stability|
-|Finance / Marketing|	~87,000|	May require motivation or rewards review|
+|Engineering or Operations	|  ~88,000	|Core technical stability|
+|Finance 0r Marketing|	~87,000|	May require motivation or rewards review|
 
 6. **Workforce Profile**
 * Mid-aged (avg 41 years), high-performing (avg 80/100).
@@ -347,6 +347,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
