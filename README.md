@@ -67,6 +67,12 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 |                      |                      |salary_vs_performance.png           |                     |                     |                         |
 |                      |                      |team_avg_salary_by_department.png   |                     |                     |                         |
 |                      |                      |team_gender_distribution_by_department.png|               |                     |                         |
+|                      |                      |anova_salary_by_department.png      |                     |                     |                         |
+|                      |                      |chi_square_department_gender.png    |                     |                     |                         |
+|                      |                      |correlation_salary_bonus.png        |                     |                     |                         |
+|                      |                      |mannwhitney_salary_by_gender.png    |                     |                     |                         |
+|                      |                      |ttest_salary_by_gender.png          |                     |                     |                         |
+|                      |                      |team_gender_distribution_by_department.png|               |                     |                         |
 
 
 
@@ -207,6 +213,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
