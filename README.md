@@ -49,7 +49,11 @@ From various projects, the following scripts are integrated and modularized:
 * Sample Visualizations: Salary distribution by department, Bonus % vs Performance Score, Gender distribution across teams, Treemaps of salary and employee count, Correlation heatmaps
 
 # Employee Data Analysis (Insights, Trends & Visualizations) 
-Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
+Unified Employee Data Analysis — This project focuses on **analyzing and uncovering insights from a synthetic employee dataset** containing demographics, compensation and performance metrics.  
+It combines **EDA**, **statistical hypothesis testing** and **data visualization** to reveal patterns in employee compensation, gender distribution and departmental structures.
+
+📁 **Core Python File:** `basic_visualizations.py`  
+📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm)
 
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       | **Reports**             |
 |--------------------- | -------------------- | -----------------------------------|---------------------|---------------------|-------------------------|
@@ -74,8 +78,143 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 |                      |                      |ttest_salary_by_gender.png          |                     |                     |                         |
 |                      |                      |team_gender_distribution_by_department.png|               |                     |                         |
 
+## Project Workflow
+1. **Data Loading & Cleaning** – Combined multiple CSV sources and handled missing values.  
+2. **Exploratory Data Analysis (EDA)** – Statistical summary, type detection, and structure insights.  
+3. **Hypothesis Testing** – Validated assumptions using multiple statistical tests (ANOVA, T-Test, Chi-Square, Mann-Whitney U, Correlation).  
+4. **Visualization & Reporting** – Saved professional plots and generated summary tables for insights.  
 
+---
 
+## 📊 Exploratory Data Analysis (EDA) Summary
+
+| Metric | Details |
+|:--|:--|
+| **Total Rows** | 4000 |
+| **Total Columns** | 11 |
+| **Numeric Columns** | ['age', 'job_level', 'years_experience', 'salary', 'bonus_percent', 'performance_score'] |
+| **Categorical Columns** | ['employee_id', 'first_name', 'gender', 'department', 'source_file'] |
+
+### 🔢 Numeric Summaries
+| Column | Mean | Median | Std | Min | Max | Count |
+|:--|--:|--:|--:|--:|--:|--:|
+| age | 40.81 | 41.00 | 11.08 | 22.00 | 59.00 | 3999 |
+| salary | 88 360.85 | 87 713.00 | 34 462.23 | 30 138.00 | 149 863.00 | 4000 |
+| bonus_percent | 12.48 | 12.51 | 4.32 | 5.00 | 19.99 | 4000 |
+| performance_score | 79.93 | 80.00 | 11.81 | 60.00 | 100.00 | 4000 |
+
+### 🧩 Categorical Insights
+| Column | Top 3 Values |
+|:--|:--|
+| gender | female (1382), other (1309), male (1309) |
+| department | Finance (745), HR (692), Operations (684) |
+| source_file | employees_cleaned_data.csv (2000), employees_project_cleaned.csv (1999), employees.csv (1) |
+
+### ⚠ Missing Values
+| Column | Missing Count |
+|:--|--:|
+| first_name | 3999 |
+| age | 1 |
+| job_level | 4000 |
+| years_experience | 4000 |
+
+---
+
+## 📈 Team & Department Analysis
+
+| Metric | Insight |
+|:--|:--|
+| **Total Teams** | 6 |
+| **Departments** | Finance, Engineering, Sales, Marketing, Operations, HR |
+
+### 💰 Average Salary by Department
+| Department | Avg Salary |
+|:--|--:|
+| HR | ₹ 89 784 |
+| Sales | ₹ 88 750 |
+| Operations | ₹ 88 698 |
+| Engineering | ₹ 87 941 |
+| Finance | ₹ 87 533 |
+| Marketing | ₹ 87 462 |
+
+### ⚧ Gender Distribution by Department (Sample)
+| Department | Female | Male | Other |
+|:--|--:|--:|--:|
+| Engineering | 222 | 200 | 224 |
+| Finance | 230 | 240 | 275 |
+| HR | 250 | 250 | 192 |
+| Marketing | 230 | 188 | 210 |
+| Operations | 242 | 232 | 210 |
+| Sales | 208 | 199 | 198 |
+
+---
+
+## 🧪 Hypothesis Testing Report
+
+| Test | Statistic | P-Value | Result | Insight |
+|:--|--:|--:|:--|:--|
+| **ANOVA (Salary vs Department)** | F = 0.455 | 0.8102 | ❌ Not Significant | No salary difference across departments |
+| **T-Test (Salary by Gender)** | t = −0.385 | 0.7004 | ❌ Not Significant | Gender has no impact on salary |
+| **Chi-Square (Dept vs Gender)** | χ² = 20.201 | 0.0274 | ✅ Significant | Department & gender are related |
+| **Correlation (Salary vs Bonus)** | r = 0.001 | 0.9430 | ❌ Not Significant | No linear relationship |
+| **Mann-Whitney U (Non-parametric)** | U = 896 162 | 0.6783 | ❌ Not Significant | No rank-based difference detected |
+
+---
+
+## 📉 Statistical Summary (Distribution Insights)
+
+| Column | Mean | Median | Std | Skew | Kurtosis |
+|:--|--:|--:|--:|--:|--:|
+| age | 40.81 | 41.00 | 11.08 | −0.05 | −1.23 |
+| salary | 88 360.85 | 87 713.00 | 34 462.23 | 0.06 | −1.19 |
+| bonus_percent | 12.48 | 12.51 | 4.32 | −0.01 | −1.20 |
+| performance_score | 79.93 | 80.00 | 11.81 | 0.02 | −1.20 |
+
+🧩 *All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
+
+---
+
+## 📁 Visualization Outputs
+
+All plots are **saved automatically** to  
+`/outputs/plots/`  
+and also **displayed live** during execution (ideal for PyCharm/Jupyter demos).
+
+Examples include:  
+- Salary distribution histogram  
+- Departmental salary boxplots  
+- Gender composition pie charts  
+- Correlation heatmaps  
+
+---
+
+## 💡 Key Insights
+
+- **Salary equality** observed across genders and departments.  
+- **No strong correlation** between salary and bonus percentage.  
+- **Department–gender relationship exists**, suggesting departmental gender skew.  
+- Data distribution shows balanced spread but incomplete job level & experience data.  
+- Clean, modular codebase ready for **further ML or dashboard integration**.  
+
+---
+
+## 🧰 Tools & Technologies
+
+- **Language:** Python 3.11+  
+- **Libraries:** pandas, numpy, scipy, matplotlib, tabulate  
+- **Environment:** PyCharm IDE  
+- **Visualization:** Matplotlib plots (saved + live)  
+
+---
+
+## 🌟 Ideal For
+
+✅ Portfolio demonstration (EDA + Statistical Thinking)  
+✅ GitHub recruiters assessing analytical clarity  
+✅ Data Analytics learning showcase  
+✅ Integration into Power BI or Dash visual dashboards  
+
+---
 
 ## Project folder tree (Tree/f) 
 D:.
@@ -213,6 +352,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
