@@ -55,7 +55,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 
 📁 **Core Python File:** `basic_visualizations.py`  
 📂 **Outputs:** `/outputs/plots/` (All plots auto-saved & displayed live in PyCharm) <br>
-📁 **Tools & Technologies:** (Language) Python 3.11+ , (Libraries) pandas, numpy, scipy, matplotlib, tabulate ,  (Environment) PyCharm IDE , (Visualization) Matplotlib plots (saved + live) 
+🧰 **Tools & Technologies:** (Language) Python 3.11+ , (Libraries) pandas, numpy, scipy, matplotlib, tabulate ,  (Environment) PyCharm IDE , (Visualization) Matplotlib plots (saved + live) 
 
 
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       | **Reports**             |
@@ -173,14 +173,7 @@ It combines **EDA**, **statistical hypothesis testing** and **data visualization
 - **No strong correlation** between salary and bonus percentage.  
 - **Department–gender relationship exists**, suggesting departmental gender skew.  
 - Data distribution shows balanced spread but incomplete job level & experience data.  
-- Clean, modular codebase ready for **further ML or dashboard integration**.  
-
-## 🧰 Tools & Technologies
-
-- **Language:** Python 3.11+  
-- **Libraries:** pandas, numpy, scipy, matplotlib, tabulate  
-- **Environment:** PyCharm IDE  
-- **Visualization:** Matplotlib plots (saved + live)  
+- Clean, modular codebase ready for **further ML or dashboard integration**.   
 
 ## Project folder tree (Tree/f) 
 D:.
@@ -318,6 +311,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
