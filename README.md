@@ -52,7 +52,7 @@ From various projects, the following scripts are integrated and modularized:
 Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visualizations and insights.
 
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       |
-|--------------------- | -------------------- | -------------- --------------------|---------------------|---------------------|
+|--------------------- | -------------------- | -----------------------------------|---------------------|---------------------|
 |employees_unified.csv |                      |avg_salary_by_department.png        |employee_data.db     |create_schema.sql    |
 |                      |                      |correlation_heatmap.png             |                     |                     |
 |                      |                      |distribution_comparison.png         |                     |                     |
@@ -207,6 +207,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
