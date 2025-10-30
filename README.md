@@ -54,10 +54,10 @@ Unified Employee Data Analysis — cleaned datasets, SQL integration, EDA, visua
 | **UpdatedDataset**   |**New Python Scripts**| **Plots(Graphs)**                  |**Database**         | **SQL_Files**       | **Reports**             |
 |--------------------- | -------------------- | -----------------------------------|---------------------|---------------------|-------------------------|
 |employees_unified.csv |                      |avg_salary_by_department.png        |employee_data.db     |create_schema.sql    |eda_summary.txt          |
-|                      |                      |correlation_heatmap.png             |                     |                     |hypothesis_testing_report.txt|
-|                      |                      |distribution_comparison.png         |                     |                     |statistical_summary.csv  |
-|                      |                      |gender_distribution.png             |                     |                     | team_analysis_report.txt|
-|                      |                      |gender_distribution_by_department.png|                    |                     |                         |
+|                      |                      |correlation_heatmap.png             |                     |avg_salary_by_dept.sql|hypothesis_testing_report.txt|
+|                      |                      |distribution_comparison.png         |                     |gender_distribution.sql|statistical_summary.csv  |
+|                      |                      |gender_distribution.png             |                     |   top_performers.sql| team_analysis_report.txt|
+|                      |                      |gender_distribution_by_department.png|                    |                     | insights_summary.md     |
 |                      |                      |pairplot_relationships.png          |                     |                     |                         |  
 |                      |                      |salary_boxplot.png                  |                     |                     |                         |
 |                      |                      |salary_distribution.png             |                     |                     |                         |
@@ -207,6 +207,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
