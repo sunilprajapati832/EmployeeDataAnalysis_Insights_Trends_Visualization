@@ -335,7 +335,7 @@ D:.
                 team_analysis.csv
 
 ## PythonFile(basic_visualization.py) for Execution this Project
-### you can see other files also in folders (.sqlfiles, reports etc.)
+### See other files(.sqlfiles, reports etc.) also in folders
 ```
 python
 import os
@@ -617,6 +617,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
