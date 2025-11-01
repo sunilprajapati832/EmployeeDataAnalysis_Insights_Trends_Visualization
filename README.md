@@ -136,6 +136,17 @@ It provides insightful business trends, statistical reports, and data-driven rec
 <table><tr><td><img src="outputs/plots/salary_vs_bonus.png"></td> <td><img src="outputs/plots/salary_vs_performance.png"></td></tr></table>
 <table><tr><td><img src="outputs/plots/team_avg_salary_by_department.png"></td> <td><img src="outputs/plots/team_gender_distribution_by_department.png"></td></tr></table>
 
+## Statistical Summary (Distribution Insights)
+
+| Column | Mean | Median | Std | Skew | Kurtosis |
+|:--|--:|--:|--:|--:|--:|
+| age | 40.81 | 41.00 | 11.08 | −0.05 | −1.23 |
+| salary | 88 360.85 | 87 713.00 | 34 462.23 | 0.06 | −1.19 |
+| bonus_percent | 12.48 | 12.51 | 4.32 | −0.01 | −1.20 |
+| performance_score | 79.93 | 80.00 | 11.81 | 0.02 | −1.20 |
+
+*All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
+
 ## Team-level Insights
 
 | Metric | Insight |
@@ -173,16 +184,6 @@ It provides insightful business trends, statistical reports, and data-driven rec
 | **Correlation (Salary vs Bonus)** | r = 0.001 | 0.9430 | ❌ Not Significant | No linear relationship |
 | **Mann-Whitney U (Non-parametric)** | U = 896 162 | 0.6783 | ❌ Not Significant | No rank-based difference detected |
 
-## Statistical Summary (Distribution Insights)
-
-| Column | Mean | Median | Std | Skew | Kurtosis |
-|:--|--:|--:|--:|--:|--:|
-| age | 40.81 | 41.00 | 11.08 | −0.05 | −1.23 |
-| salary | 88 360.85 | 87 713.00 | 34 462.23 | 0.06 | −1.19 |
-| bonus_percent | 12.48 | 12.51 | 4.32 | −0.01 | −1.20 |
-| performance_score | 79.93 | 80.00 | 11.81 | 0.02 | −1.20 |
-
-*All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
 
 ## Key Insights
 
@@ -358,6 +359,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
