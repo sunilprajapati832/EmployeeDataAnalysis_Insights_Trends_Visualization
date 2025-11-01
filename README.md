@@ -126,6 +126,11 @@ It provides insightful business trends, statistical reports, and data-driven rec
 | job_level | 4000 |
 | years_experience | 4000 |
 
+## Visualization (Basic & Reporting)
+
+![Plot Preview](outputs/plots/avg_salary_by_department.png)  
+
+
 ## Team & Department Analysis
 
 | Metric | Insight |
@@ -348,6 +353,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
