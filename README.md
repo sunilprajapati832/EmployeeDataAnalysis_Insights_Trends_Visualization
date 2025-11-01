@@ -129,8 +129,8 @@ It provides insightful business trends, statistical reports, and data-driven rec
 ## Visualization (Basic & Reporting)
 
 <table><tr><td><img src="outputs/plots/avg_salary_by_department.png"></td> <td><img src="outputs/plots/salary_distribution.png"></td></tr></table>
-<table><tr><td><img src="outputs/plots/distribution_comparison.png"></td> <td><img src="outputs/plots/gender_distribution.png"></td></tr></table>
-<table><tr><td><img src="outputs/plots/gender_distribution_by_department.png"></td> <td><img src="outputs/plots/pairplot_relationships.png"></td></tr></table>
+<table><tr><td><img src="outputs/plots/gender_distribution_by_department.png"></td> <td><img src="outputs/plots/gender_distribution.png"></td></tr></table>
+<table><tr><td><img src="outputs/plots/distribution_comparison.png"></td> <td><img src="outputs/plots/pairplot_relationships.png"></td></tr></table>
 <table><tr><td><img src="outputs/plots/salary_boxplot.png"></td> <td><img src="outputs/plots/correlation_heatmap.png"></td></tr></table>
 <table><tr><td><img src="outputs/plots/salary_violin_by_department.png"></td> <td><img src="outputs/plots/salary_violin_department.png"></td></tr></table>
 <table><tr><td><img src="outputs/plots/salary_vs_bonus.png"></td> <td><img src="outputs/plots/salary_vs_performance.png"></td></tr></table>
@@ -360,6 +360,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
