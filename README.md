@@ -136,9 +136,7 @@ It provides insightful business trends, statistical reports, and data-driven rec
 <table><tr><td><img src="outputs/plots/salary_vs_bonus.png"></td> <td><img src="outputs/plots/salary_vs_performance.png"></td></tr></table>
 <table><tr><td><img src="outputs/plots/team_avg_salary_by_department.png"></td> <td><img src="outputs/plots/team_gender_distribution_by_department.png"></td></tr></table>
 
-
-
-## Team & Department Analysis
+## Team-level Insights
 
 | Metric | Insight |
 |:--|:--|
@@ -360,6 +358,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
