@@ -153,6 +153,16 @@ It provides insightful business trends, statistical reports, and data-driven rec
 <table><tr><td><img src="src/outputs/plots/chi_square_department_gender.png"></td> <td><img src="src/outputs/plots/mannwhitney_salary_by_gender.png"></td></tr></table>
 <table><tr><td><img src="src/outputs/plots/ttest_salary_by_gender.png"></td> <td><img src=""></td></tr></table>
 
+## Hypothesis Testing Report
+
+| Test | Statistic | P-Value | Result | Insight |
+|:--|--:|--:|:--|:--|
+| **ANOVA (Salary vs Department)** | F = 0.455 | 0.8102 | ❌ Not Significant | No salary difference across departments |
+| **T-Test (Salary by Gender)** | t = −0.385 | 0.7004 | ❌ Not Significant | Gender has no impact on salary |
+| **Chi-Square (Dept vs Gender)** | χ² = 20.201 | 0.0274 | ✅ Significant | Department & gender are related |
+| **Correlation (Salary vs Bonus)** | r = 0.001 | 0.9430 | ❌ Not Significant | No linear relationship |
+| **Mann-Whitney U (Non-parametric)** | U = 896 162 | 0.6783 | ❌ Not Significant | No rank-based difference detected |
+
 ## Team-level Insights
 
 | Metric | Insight |
@@ -179,16 +189,6 @@ It provides insightful business trends, statistical reports, and data-driven rec
 | Marketing | 230 | 188 | 210 |
 | Operations | 242 | 232 | 210 |
 | Sales | 208 | 199 | 198 |
-
-## Hypothesis Testing Report
-
-| Test | Statistic | P-Value | Result | Insight |
-|:--|--:|--:|:--|:--|
-| **ANOVA (Salary vs Department)** | F = 0.455 | 0.8102 | ❌ Not Significant | No salary difference across departments |
-| **T-Test (Salary by Gender)** | t = −0.385 | 0.7004 | ❌ Not Significant | Gender has no impact on salary |
-| **Chi-Square (Dept vs Gender)** | χ² = 20.201 | 0.0274 | ✅ Significant | Department & gender are related |
-| **Correlation (Salary vs Bonus)** | r = 0.001 | 0.9430 | ❌ Not Significant | No linear relationship |
-| **Mann-Whitney U (Non-parametric)** | U = 896 162 | 0.6783 | ❌ Not Significant | No rank-based difference detected |
 
 
 ## Key Insights
@@ -365,6 +365,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
