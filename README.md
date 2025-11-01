@@ -147,6 +147,12 @@ It provides insightful business trends, statistical reports, and data-driven rec
 
 *All key metrics show near-normal distribution with mild negative kurtosis (light tails).*
 
+## Advanced Analysis 
+
+<table><tr><td><img src="src/outputs/plots/anova_salary_by_department.png"></td> <td><img src="src/outputs/plots/correlation_salary_bonus.png"></td></tr></table>
+<table><tr><td><img src="src/outputs/plots/chi_square_department_gender.png"></td> <td><img src="src/outputs/plots/mannwhitney_salary_by_gender.png"></td></tr></table>
+<table><tr><td><img src="src/outputs/plots/ttest_salary_by_gender.png"></td> <td><img src=""></td></tr></table>
+
 ## Team-level Insights
 
 | Metric | Insight |
