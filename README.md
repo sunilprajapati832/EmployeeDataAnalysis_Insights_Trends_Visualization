@@ -171,6 +171,13 @@ It provides insightful business trends, statistical reports, and data-driven rec
 | **Departments** | Finance, Engineering, Sales, Marketing, Operations, HR |
 
 ### Average Salary by Department
+
+|Average Salary by Department|Gender Distribution by Department (Sample)|
+|----------------------------|------------------------------------------|
+|<tr><th>Department</th><th>Avg Salary</th></tr>| <tr><th>DepartmentA</th><th>Female</th><th>Male</th><th>Other</th></tr> |
+
+
+
 | Department | Avg Salary |
 |:--|--:|
 | HR | ₹ 89 784 |
@@ -365,6 +372,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
