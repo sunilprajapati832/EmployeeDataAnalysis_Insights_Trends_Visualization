@@ -170,38 +170,9 @@ It provides insightful business trends, statistical reports, and data-driven rec
 | **Total Teams** | 6 |
 | **Departments** | Finance, Engineering, Sales, Marketing, Operations, HR |
 
-### Average Salary by Department
-
-|Average Salary by Department                   |Gender Distribution by Department (Sample)                               |
-|-----------------------------------------------|-------------------------------------------------------------------------|
-| <table>                                       | <table>                                                                 |
-|<tr><th>Department</th><th>Avg Salary</th></tr>| <tr><th>DepartmentA</th><th>Female</th><th>Male</th><th>Other</th></tr> |
-
- | </table>                                     |  </table>                                                               |
-
 | Average Salary by Department  | Gender Distribution by Department (Sample) |
 |-------------------------------|--------------------------------------------|
 | <table> <tr><th>Department</th><th>Avg Salary</th></tr><tr><td>HR</td><td>₹ 89 784</td></tr><tr><td>Sales</td><td>₹ 88 750</td></tr><tr><td>Operations</td><td>₹ 88 698</td></tr><tr><td>Engineering</td><td>₹ 87 941</td></tr><tr><td>Finance</td><td>₹ 87 533</td></tr><tr><td>Marketing</td><td>₹ 87 462</td></tr> </table> | <table> <tr><th>Department</th><th>Male</th><th>Female</th><th>Other</th></tr><tr><td>Engineering</td><td>222</td><td>200</td><td>224</td></tr><tr><td>Finance</td><td>230</td><td>240</td><td>275</td></tr><tr><td>HR</td><td>250</td><td>250</td><td>192</td></tr><tr><td>Marketing</td><td>230</td><td>188</td><td>210</td></tr><tr><td>Operations</td><td>242</td><td>232</td><td>210</td></tr><tr><td>Sales</td><td>208</td><td>199</td><td>198</td></tr> </table> |
-
-| Department | Avg Salary |
-|:--|--:|
-| HR | ₹ 89 784 |
-| Sales | ₹ 88 750 |
-| Operations | ₹ 88 698 |
-| Engineering | ₹ 87 941 |
-| Finance | ₹ 87 533 |
-| Marketing | ₹ 87 462 |
-
-### Gender Distribution by Department (Sample)
-| Department | Female | Male | Other |
-|:--|--:|--:|--:|
-| Engineering | 222 | 200 | 224 |
-| Finance | 230 | 240 | 275 |
-| HR | 250 | 250 | 192 |
-| Marketing | 230 | 188 | 210 |
-| Operations | 242 | 232 | 210 |
-| Sales | 208 | 199 | 198 |
-
 
 ## Key Insights
 
@@ -377,6 +348,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
