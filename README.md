@@ -179,9 +179,9 @@ It provides insightful business trends, statistical reports, and data-driven rec
 
  | </table>                                     |  </table>                                                               |
 
- | Table 1 Data | Table 2 Data |
-|--------------|--------------|
-| <table> <tr><th>Name</th><th>Age</th></tr><tr><td>Alice</td><td>30</td></tr><tr><td>Bob</td><td>25</td></tr> </table> | <table> <tr><th>Product</th><th>Price</th></tr><tr><td>Laptop</td><td>$1200</td></tr><tr><td>Mouse</td><td>$25</td></tr> </table> |
+| Average Salary by Department  | Gender Distribution by Department (Sample) |
+|-------------------------------|--------------------------------------------|
+| <table> <tr><th>Department</th><th>Avg Salary</th></tr><tr><td>HR</td><td>₹ 89 784</td></tr><tr><td>Sales</td><td>₹ 88 750</td></tr><tr><td>Operations</td><td>₹ 88 698</td></tr><tr><td>Engineering</td><td>₹ 87 941</td></tr><tr><td>Finance</td><td>₹ 87 533</td></tr><tr><td>Marketing</td><td>₹ 87 462</td></tr> </table> | <table> <tr><th>Department</th><th>Male</th><th>Female</th><th>Other</th></tr><tr><td>Engineering</td><td>222</td><td>200</td><td>224</td></tr><tr><td>Finance</td><td>230</td><td>240</td><td>275</td></tr><tr><td>HR</td><td>250</td><td>250</td><td>192</td></tr><tr><td>Marketing</td><td>230</td><td>188</td><td>210</td></tr><tr><td>Operations</td><td>242</td><td>232</td><td>210</td></tr><tr><td>Sales</td><td>208</td><td>199</td><td>198</td></tr> </table> |
 
 | Department | Avg Salary |
 |:--|--:|
@@ -377,6 +377,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
