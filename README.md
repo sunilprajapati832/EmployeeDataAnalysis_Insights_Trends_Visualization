@@ -128,7 +128,9 @@ It provides insightful business trends, statistical reports, and data-driven rec
 
 ## Visualization (Basic & Reporting)
 
-<table><tr><td><img src="avg_salary_by_department.png"></td> <td><img src="avg_salary_by_department.png"></td></tr></table>
+<table><tr><td><img src="outputs/plots/avg_salary_by_department.png"></td> <td><img src="outputs/plots/avg_salary_by_department.png"></td></tr></table>
+
+
 
 ![Plot Preview](outputs/plots/avg_salary_by_department.png)   ![Plot Preview](outputs/plots/avg_salary_by_department.png) 
 
@@ -355,6 +357,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
