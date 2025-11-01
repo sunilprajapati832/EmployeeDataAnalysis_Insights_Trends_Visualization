@@ -179,6 +179,10 @@ It provides insightful business trends, statistical reports, and data-driven rec
 
  | </table>                                     |  </table>                                                               |
 
+ | Table 1 Data | Table 2 Data |
+|--------------|--------------|
+| <table> <tr><th>Name</th><th>Age</th></tr><tr><td>Alice</td><td>30</td></tr><tr><td>Bob</td><td>25</td></tr> </table> | <table> <tr><th>Product</th><th>Price</th></tr><tr><td>Laptop</td><td>$1200</td></tr><tr><td>Mouse</td><td>$25</td></tr> </table> |
+
 | Department | Avg Salary |
 |:--|--:|
 | HR | ₹ 89 784 |
@@ -373,6 +377,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
