@@ -128,7 +128,7 @@ It provides insightful business trends, statistical reports, and data-driven rec
 
 ## Visualization (Basic & Reporting)
 
-![Plot Preview](outputs/plots/avg_salary_by_department.png)  
+![Plot Preview](outputs/plots/avg_salary_by_department.png)   ![Plot Preview](outputs/plots/avg_salary_by_department.png) 
 
 
 ## Team & Department Analysis
@@ -353,6 +353,7 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
 
 
