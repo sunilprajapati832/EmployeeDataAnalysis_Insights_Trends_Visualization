@@ -334,7 +334,7 @@ D:.
                 statistical_summary.csv
                 team_analysis.csv
 
-## PythonFile(basic_visualization1.py) for Execution this Project
+## PythonFile for Execution this Project
 ### See other files(.sqlfiles, reports etc.) also in folders
 ```
 python
@@ -874,4 +874,5 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
 
