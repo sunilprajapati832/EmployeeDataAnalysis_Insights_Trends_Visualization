@@ -362,17 +362,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
 from colorama import init as colorama_init, Fore, Style
+from datetime import datetime
 
 # Initialize colorama (keeps output professional and readable)
 colorama_init(autoreset=True)
-
 # Suppress numpy/pandas runtime warnings that don't affect outputs
 warnings.filterwarnings("ignore")
 
 # -----------------------
 # Configuration / Paths
 # -----------------------
-BASE_DIR = Path(__file__).resolve().parents[1]
+BASE_DIR = Path.cwd()
+
 DATA_PATH = BASE_DIR / "data" / "processed" / "employees_unified.csv"
 
 OUTPUT_PLOTS = BASE_DIR / "outputs" / "plots"
@@ -417,7 +418,6 @@ def _timeit(func):
 
 # -----------------------
 # Core pipeline pieces
-# -----------------------
 @_timeit
 def load_data(path: Path) -> pd.DataFrame:
     if not path.exists():
@@ -479,7 +479,6 @@ def exploratory_data_analysis(df: pd.DataFrame) -> None:
 
     _log(f"EDA summary written: {out}", "ok")
 
-
 @_timeit
 def basic_visualizations(df: pd.DataFrame, show: bool = True) -> None:
     """Generate and save basic visualizations. Optionally plt.show() them."""
@@ -536,7 +535,6 @@ def basic_visualizations(df: pd.DataFrame, show: bool = True) -> None:
             plt.show()
         plt.close()
         _log(f"Saved: {p}", "ok")
-
 
 @_timeit
 def statistical_summary(df: pd.DataFrame) -> pd.DataFrame:
@@ -620,101 +618,217 @@ def advanced_statistical_analysis(df: pd.DataFrame, show: bool = True) -> None:
             _log("No overlapping data for experience vs performance correlation.", "warn")
 
 
+
+
+# === Utility Decorator & Logger ===
+def _timeit(func):
+    def wrapper(*args, **kwargs):
+        start = datetime.now()
+        result = func(*args, **kwargs)
+        end = datetime.now()
+        duration = (end - start).total_seconds()
+        print(f"\n⏱️ {func.__name__} completed in {duration:.2f}s\n")
+        return result
+    return wrapper
+
+def _log(message: str, status="info"):
+    tag = {"ok": "✅", "warn": "⚠️", "err": "❌"}.get(status, "ℹ️")
+    print(f"{tag} {message}")
+
+# === Output Folder Setup ===
+OUTPUT_REPORTS = Path("outputs/reports")
+OUTPUT_REPORTS.mkdir(parents=True, exist_ok=True)
+
+# === Hypothesis Testing Function ===
 @_timeit
 def hypothesis_tests(df: pd.DataFrame) -> None:
-    """Run a small set of hypothesis tests and save a textual report."""
+    """Perform multiple hypothesis tests and save a textual report."""
     lines = []
-    # t-test: salary male vs female
+    lines.append("🧠 EMPLOYEE HYPOTHESIS TESTING REPORT")
+    lines.append("=" * 60)
+
+    # ANOVA Test: Salary difference across departments
+    if {"department", "salary"}.issubset(df.columns):
+        try:
+            anova = stats.f_oneway(
+                *[df.loc[df["department"] == d, "salary"].dropna()
+                  for d in df["department"].unique()]
+            )
+            conclusion = "Reject H0 (Significant difference)" if anova.pvalue < 0.05 else "Fail to Reject H0"
+            lines.append("\n[ANOVA Test: Salary by Department]")
+            lines.append(f"F-statistic = {anova.statistic:.3f}, p-value = {anova.pvalue:.4f}, conclusion = {conclusion}")
+        except Exception as e:
+            lines.append(f"ANOVA Test Error: {e}")
+    else:
+        lines.append("ANOVA skipped (missing department or salary column).")
+
+    # T-Test: Salary by Gender
     if {"gender", "salary"}.issubset(df.columns):
-        male = df.loc[df["gender"] == "male", "salary"].dropna()
-        female = df.loc[df["gender"] == "female", "salary"].dropna()
+        male = df.loc[df["gender"].str.lower() == "male", "salary"].dropna()
+        female = df.loc[df["gender"].str.lower() == "female", "salary"].dropna()
         if len(male) > 1 and len(female) > 1:
             t_stat, p_val = stats.ttest_ind(male, female, equal_var=False)
-            conclusion = "Reject H0" if p_val < 0.05 else "Fail to Reject H0"
-            lines.append(f"T-test: male vs female salary -> t={t_stat:.4f}, p={p_val:.4f}, conclusion={conclusion}")
+            conclusion = "Reject H0 (Significant difference)" if p_val < 0.05 else "Fail to Reject H0"
+            lines.append("\n[T-Test: Salary by Gender]")
+            lines.append(f"T-statistic = {t_stat:.3f}, p-value = {p_val:.4f}, conclusion = {conclusion}")
         else:
-            lines.append("T-test skipped (not enough male/female salary samples).")
+            lines.append("T-Test skipped (not enough gender samples).")
     else:
-        lines.append("T-test skipped (gender or salary column missing).")
+        lines.append("T-Test skipped (gender/salary missing).")
 
-    # chi-square: department vs gender
+    # Chi-Square Test: Department vs Gender
     if {"department", "gender"}.issubset(df.columns):
-        ct = pd.crosstab(df["department"], df["gender"])
+        contingency = pd.crosstab(df["department"], df["gender"])
         try:
-            chi2, p, dof, expected = stats.chi2_contingency(ct)
-            conclusion = "Reject H0" if p < 0.05 else "Fail to Reject H0"
-            lines.append(f"Chi-square: department vs gender -> chi2={chi2:.4f}, p={p:.4f}, conclusion={conclusion}")
+            chi2, p, dof, exp = stats.chi2_contingency(contingency)
+            conclusion = "Reject H0 (Relationship exists)" if p < 0.05 else "Fail to Reject H0"
+            lines.append("\n[Chi-Square Test: Department vs Gender]")
+            lines.append(f"Chi2 = {chi2:.3f}, p-value = {p:.4f}, conclusion = {conclusion}")
         except Exception as e:
-            lines.append(f"Chi-square test error: {e}")
+            lines.append(f"Chi-Square Test Error: {e}")
     else:
-        lines.append("Chi-square skipped (department or gender missing).")
+        lines.append("Chi-Square skipped (department/gender missing).")
 
+    # Correlation: Salary vs Bonus
+    if {"salary", "bonus"}.issubset(df.columns):
+        corr, p_corr = stats.pearsonr(df["salary"], df["bonus"])
+        conclusion = "Reject H0 (Significant correlation)" if p_corr < 0.05 else "Fail to Reject H0"
+        lines.append("\n[Correlation: Salary vs Bonus]")
+        lines.append(f"Pearson r = {corr:.3f}, p-value = {p_corr:.4f}, conclusion = {conclusion}")
+    else:
+        lines.append("Correlation skipped (salary/bonus missing).")
+
+    # Mann-Whitney U Test (Non-parametric)
+    if {"gender", "salary"}.issubset(df.columns):
+        male = df.loc[df["gender"].str.lower() == "male", "salary"].dropna()
+        female = df.loc[df["gender"].str.lower() == "female", "salary"].dropna()
+        if len(male) > 1 and len(female) > 1:
+            u_stat, p_u = stats.mannwhitneyu(male, female)
+            conclusion = "Reject H0 (Difference detected)" if p_u < 0.05 else "Fail to Reject H0"
+            lines.append("\n[Mann-Whitney U Test]")
+            lines.append(f"U-statistic = {u_stat:.3f}, p-value = {p_u:.4f}, conclusion = {conclusion}")
+        else:
+            lines.append("Mann-Whitney U skipped (insufficient samples).")
+    else:
+        lines.append("Mann-Whitney skipped (gender/salary missing).")
+
+    # === Write to Report File ===
     out = OUTPUT_REPORTS / "hypothesis_testing_report.txt"
     with out.open("w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    _log(f"Hypothesis testing report saved: {out}", "ok")
 
+    _log(f"Hypothesis Testing Report saved at: {out}", "ok")
 
+# Example run:
+# df = pd.read_csv("data/cleaned_employee_data.csv")
+# hypothesis_tests(df)
+
+# === Utility Decorator & Logger ===
+def _timeit(func):
+    def wrapper(*args, **kwargs):
+        start = datetime.now()
+        result = func(*args, **kwargs)
+        end = datetime.now()
+        duration = (end - start).total_seconds()
+        print(f"\n⏱️ {func.__name__} completed in {duration:.2f}s\n")
+        return result
+    return wrapper
+
+def _log(message: str, status="info"):
+    tag = {"ok": "✅", "warn": "⚠️", "err": "❌"}.get(status, "ℹ️")
+    print(f"{tag} {message}")
+
+# === Output Folder Setup ===
+OUTPUT_REPORTS = Path("outputs/reports")
+OUTPUT_REPORTS.mkdir(parents=True, exist_ok=True)
+
+# === Hypothesis Testing Function ===
 @_timeit
-def team_analysis(df: pd.DataFrame, show: bool = True) -> None:
-    """Produce team-level summaries and plots automatically (no input prompts)."""
+def hypothesis_tests(df: pd.DataFrame) -> None:
+    """Perform multiple hypothesis tests and save a textual report."""
     lines = []
-    if "department" not in df.columns:
-        _log("Team analysis skipped: 'department' column not found.", "warn")
-        return
+    lines.append("🧠 EMPLOYEE HYPOTHESIS TESTING REPORT")
+    lines.append("=" * 60)
 
-    # total teams and list
-    teams = df["department"].dropna().unique().tolist()
-    lines.append(f"Total teams: {len(teams)}")
-    lines.append("Teams: " + ", ".join(map(str, teams)))
+    # ANOVA Test: Salary difference across departments
+    if {"department", "salary"}.issubset(df.columns):
+        try:
+            anova = stats.f_oneway(
+                *[df.loc[df["department"] == d, "salary"].dropna()
+                  for d in df["department"].unique()]
+            )
+            conclusion = "Reject H0 (Significant difference)" if anova.pvalue < 0.05 else "Fail to Reject H0"
+            lines.append("\n[ANOVA Test: Salary by Department]")
+            lines.append(f"F-statistic = {anova.statistic:.3f}, p-value = {anova.pvalue:.4f}, conclusion = {conclusion}")
+        except Exception as e:
+            lines.append(f"ANOVA Test Error: {e}")
+    else:
+        lines.append("ANOVA skipped (missing department or salary column).")
 
-    # avg salary by department
-    if "salary" in df.columns:
-        avg_salary = df.groupby("department")["salary"].mean().sort_values(ascending=False)
-        lines.append("\nAverage salary by department (top 10):")
-        lines.append(avg_salary.head(10).to_string())
+    # T-Test: Salary by Gender
+    if {"gender", "salary"}.issubset(df.columns):
+        male = df.loc[df["gender"].str.lower() == "male", "salary"].dropna()
+        female = df.loc[df["gender"].str.lower() == "female", "salary"].dropna()
+        if len(male) > 1 and len(female) > 1:
+            t_stat, p_val = stats.ttest_ind(male, female, equal_var=False)
+            conclusion = "Reject H0 (Significant difference)" if p_val < 0.05 else "Fail to Reject H0"
+            lines.append("\n[T-Test: Salary by Gender]")
+            lines.append(f"T-statistic = {t_stat:.3f}, p-value = {p_val:.4f}, conclusion = {conclusion}")
+        else:
+            lines.append("T-Test skipped (not enough gender samples).")
+    else:
+        lines.append("T-Test skipped (gender/salary missing).")
 
-        # save bar plot
-        plt.figure(figsize=(10, 6))
-        avg_salary.plot(kind="bar", color="skyblue")
-        plt.title("Average Salary by Department")
-        plt.ylabel("Average Salary")
-        plt.tight_layout()
-        p = OUTPUT_PLOTS / "team_avg_salary_by_department.png"
-        plt.savefig(p)
-        if show:
-            plt.show()
-        plt.close()
-        _log(f"Saved: {p}", "ok")
+    # Chi-Square Test: Department vs Gender
+    if {"department", "gender"}.issubset(df.columns):
+        contingency = pd.crosstab(df["department"], df["gender"])
+        try:
+            chi2, p, dof, exp = stats.chi2_contingency(contingency)
+            conclusion = "Reject H0 (Relationship exists)" if p < 0.05 else "Fail to Reject H0"
+            lines.append("\n[Chi-Square Test: Department vs Gender]")
+            lines.append(f"Chi2 = {chi2:.3f}, p-value = {p:.4f}, conclusion = {conclusion}")
+        except Exception as e:
+            lines.append(f"Chi-Square Test Error: {e}")
+    else:
+        lines.append("Chi-Square skipped (department/gender missing).")
 
-    # gender pivot
-    if "gender" in df.columns:
-        pivot = pd.crosstab(df["department"], df["gender"])
-        lines.append("\nGender counts by department (sample):")
-        lines.append(pivot.head(10).to_string())
+    # Correlation: Salary vs Bonus
+    if {"salary", "bonus"}.issubset(df.columns):
+        corr, p_corr = stats.pearsonr(df["salary"], df["bonus"])
+        conclusion = "Reject H0 (Significant correlation)" if p_corr < 0.05 else "Fail to Reject H0"
+        lines.append("\n[Correlation: Salary vs Bonus]")
+        lines.append(f"Pearson r = {corr:.3f}, p-value = {p_corr:.4f}, conclusion = {conclusion}")
+    else:
+        lines.append("Correlation skipped (salary/bonus missing).")
 
-        # save stacked bar
-        plt.figure(figsize=(10, 6))
-        pivot.plot(kind="bar", stacked=True)
-        plt.title("Gender Distribution by Department")
-        plt.tight_layout()
-        p = OUTPUT_PLOTS / "team_gender_distribution_by_department.png"
-        plt.savefig(p)
-        if show:
-            plt.show()
-        plt.close()
-        _log(f"Saved: {p}", "ok")
+    # Mann-Whitney U Test (Non-parametric)
+    if {"gender", "salary"}.issubset(df.columns):
+        male = df.loc[df["gender"].str.lower() == "male", "salary"].dropna()
+        female = df.loc[df["gender"].str.lower() == "female", "salary"].dropna()
+        if len(male) > 1 and len(female) > 1:
+            u_stat, p_u = stats.mannwhitneyu(male, female)
+            conclusion = "Reject H0 (Difference detected)" if p_u < 0.05 else "Fail to Reject H0"
+            lines.append("\n[Mann-Whitney U Test]")
+            lines.append(f"U-statistic = {u_stat:.3f}, p-value = {p_u:.4f}, conclusion = {conclusion}")
+        else:
+            lines.append("Mann-Whitney U skipped (insufficient samples).")
+    else:
+        lines.append("Mann-Whitney skipped (gender/salary missing).")
 
-    # write team report
-    out = OUTPUT_REPORTS / "team_analysis_report.txt"
+    # === Write to Report File ===
+    out = OUTPUT_REPORTS / "hypothesis_testing_report.txt"
     with out.open("w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    _log(f"Team analysis report saved: {out}", "ok")
+    _log(f"Hypothesis Testing Report saved at: {out}", "ok")
+
+# Example run:
+# df = pd.read_csv("data/cleaned_employee_data.csv")
+# hypothesis_tests(df)
 
 
-# -----------------------
-# Main
-# -----------------------
+
+
+
 def main(show_plots: bool = True):
     total_start = time.perf_counter()
     _log("Employee Data Analysis pipeline starting...", "info")
@@ -728,13 +842,11 @@ def main(show_plots: bool = True):
     if "department" in df.columns:
         df["department"] = df["department"].astype(str).str.strip()
 
-    # Steps
     exploratory_data_analysis(df)
     basic_visualizations(df, show=show_plots)
     statistical_summary(df)
     advanced_statistical_analysis(df, show=show_plots)
     hypothesis_tests(df)
-    team_analysis(df, show=show_plots)
 
     total_end = time.perf_counter()
     _log(f"Pipeline completed in {total_end - total_start:.2f} seconds", "ok")
@@ -743,6 +855,7 @@ def main(show_plots: bool = True):
 if __name__ == "__main__":
     # show_plots=True will both save and display each plot (good for PyCharm)
     main(show_plots=True)
+
 
 ```
 
@@ -761,3 +874,4 @@ If you found this project interesting, let’s connect!
 ---
 🛠 Built by: Sunil Prajapati |  Github + Data + Python + PyCharm + Canva 
 ---
+
